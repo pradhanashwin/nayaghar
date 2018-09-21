@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashwin.nayaghar.Dog_adoptdetail"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:id="@+id/dog_adoptdetail_photo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/adme" />
+
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:layout_marginTop="15dp"
+                android:id="@+id/dd_name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kaali"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/dog_adoptdetail_name" />
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Age"
+                android:layout_marginTop="15dp"
+                android:id="@+id/dd_age" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="19 Months"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/dog_adoptdetail_age" />
+
+
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Gender"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/d_gen" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Male"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/dog_adoptdetail_gender" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Vaccination"
+                android:layout_marginTop="10dp"
+                android:id="@+id/d_vac" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Yes"
+                android:layout_marginTop="-21dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/dog_adoptdetail_vac" />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Breed"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/d_bread" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Terrier"
+                android:layout_marginTop="-21dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/dog_adoptdetail_Breed" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/d_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:minHeight="120dp"
+                    android:maxLines="100"
+                    android:singleLine="true"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+
+                    android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:layout_marginTop="-50dp"
+                android:id="@+id/dog_adoptdetail_description" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
